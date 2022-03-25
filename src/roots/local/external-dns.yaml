@@ -14,7 +14,10 @@ spec:
         provider: azure
         txtOwnerId: "k3s"
         domainFilters:
-        - argocdzone.com
+        - cookingwithazure.com
+        # https://github.com/bitnami/charts/issues/9572
+        extraArgs: 
+          azure-resource-group: dns
     chart: external-dns
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: "6.2.2"
