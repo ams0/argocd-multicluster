@@ -32,7 +32,7 @@ spec:
           #       release: kube-prometheus
           service:
             annotations:
-              external-dns.alpha.kubernetes.io/hostname: argocd.k3s.cookingwithazure.com
+              external-dns.alpha.kubernetes.io/hostname: *.cookingwithazure.com
           #     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
     chart: ingress-nginx
     repoURL: https://kubernetes.github.io/ingress-nginx
