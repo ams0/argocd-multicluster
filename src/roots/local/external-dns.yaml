@@ -11,10 +11,11 @@ spec:
   source:
     helm:
       values: |
+        provider: azure
         txtOwnerId: "k3s"
         domainFilters:
         - cookingwithazure.com
-        provider: azure
+        azure:
           useManagedIdentityExtension: true
     chart: external-dns
     repoURL: https://charts.bitnami.com/bitnami
