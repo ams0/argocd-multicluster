@@ -15,6 +15,8 @@ spec:
         txtOwnerId: "k3s"
         domainFilters:
         - cookingwithazure.com
+        azure:
+          resourceGroup: dns
     chart: external-dns
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: "6.2.2"
